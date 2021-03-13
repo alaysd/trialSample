@@ -1,0 +1,7 @@
+- name: Pull and Run docker image
+  hosts: all
+  tasks:
+    - name: Pull alaysd/sampleHelloWorld
+      docker_image:
+        name: alaysd/sample_hello_world
+        source: pull
